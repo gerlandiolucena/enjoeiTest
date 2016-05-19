@@ -19,7 +19,7 @@ class ListViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         ProductRequest.productList { (product) in
-            //TODO:Inplementar feedback para o usuário de tela carregando
+            //TODO:Implementar feedback para o usuário de tela carregando
             
             //Somente depois de receber os dados do servidor que a iremos mandar a collection ser carregada
             self.productList = product ?? [Product]()

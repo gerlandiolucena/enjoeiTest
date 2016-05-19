@@ -537,6 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EnjoeiTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.gerlandiolucena.EnjoeiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -548,6 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EnjoeiTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.gerlandiolucena.EnjoeiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -619,6 +621,7 @@
 				6C3881371CED58C400540ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C3881381CED58C400540ECD /* Build configuration list for PBXNativeTarget "EnjoeiTestTests" */ = {
 			isa = XCConfigurationList;
@@ -627,6 +630,7 @@
 				6C38813A1CED58C400540ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C38813B1CED58C400540ECD /* Build configuration list for PBXNativeTarget "EnjoeiTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -635,6 +639,7 @@
 				6C38813D1CED58C400540ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
