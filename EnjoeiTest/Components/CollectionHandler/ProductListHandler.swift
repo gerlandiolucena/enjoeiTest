@@ -15,7 +15,7 @@ class ProductListHandler: BaseCollectionHandler {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("productCell", forIndexPath: indexPath)
         
         //Verificamos qual o tipo da célula instaciada
-        if let productCell = cell as? ProductCell, let product = listOfItens?[indexPath.item] as? Product{
+        if let productCell = cell as? ProductCell, let product = listOfItens?[indexPath.item] as? Product {
             //A classe da célula fica responsável por popular os dados da tela
             productCell.populateCell(product)
             return productCell

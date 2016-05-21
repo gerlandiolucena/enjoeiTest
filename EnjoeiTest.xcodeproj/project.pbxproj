@@ -38,6 +38,7 @@
 		6CF1E8931CEFE59B004A1543 /* SellerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1E8921CEFE59B004A1543 /* SellerTableCell.swift */; };
 		6CF1E89E1CEFECA2004A1543 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF1E89A1CEFECA2004A1543 /* LaunchScreen.storyboard */; };
 		6CF1E89F1CEFECA2004A1543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF1E89C1CEFECA2004A1543 /* Main.storyboard */; };
+		6CF1E8A51CEFF18A004A1543 /* ListProductTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1E8A41CEFF18A004A1543 /* ListProductTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		6CF1E8921CEFE59B004A1543 /* SellerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerTableCell.swift; sourceTree = "<group>"; };
 		6CF1E89B1CEFECA2004A1543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CF1E89D1CEFECA2004A1543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CF1E8A41CEFF18A004A1543 /* ListProductTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProductTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 				6CF1E88E1CEFE031004A1543 /* DescriptionDetailTableCell.swift */,
 				6CF1E8901CEFE2AF004A1543 /* ValueDiscountTableCell.swift */,
 				6CF1E8921CEFE59B004A1543 /* SellerTableCell.swift */,
+				6CF1E8A41CEFF18A004A1543 /* ListProductTableCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				6C3881641CEFB18800540ECD /* ImageGalleryHandler.swift in Sources */,
 				6C3881131CED58C300540ECD /* DetailViewController.swift in Sources */,
 				6CF1E88F1CEFE031004A1543 /* DescriptionDetailTableCell.swift in Sources */,
+				6CF1E8A51CEFF18A004A1543 /* ListProductTableCell.swift in Sources */,
 				6CF1E8891CEFD12F004A1543 /* BaseCell.swift in Sources */,
 				6C3881441CED610500540ECD /* Product.swift in Sources */,
 				6C38815D1CED9A4100540ECD /* GLImageView.swift in Sources */,

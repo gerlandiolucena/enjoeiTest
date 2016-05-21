@@ -27,11 +27,11 @@ class ProductCell: UICollectionViewCell {
     }
     
     func setupInfoLabel(price: String, size: Int?) {
-        let priceAttr = NSMutableAttributedString(string:price, attributes: [NSForegroundColorAttributeName: UIColor(netHex: 0xF5595E)])
+        let priceAttr = NSMutableAttributedString(string:price, attributes: [NSForegroundColorAttributeName: UIColor(netHex: 0xF5595E), NSFontAttributeName: UIFont(name: "ProximaNova-SemiBold", size: 16)!])
         let str = NSMutableAttributedString(attributedString: priceAttr)
         
         if let value = size {
-            let sizeAttr = NSMutableAttributedString(string:" - tam \(value)", attributes: [NSForegroundColorAttributeName: UIColor.lightGrayColor()])
+            let sizeAttr = NSMutableAttributedString(string:" - tam \(value)", attributes: [NSForegroundColorAttributeName: UIColor.lightGrayColor(), NSFontAttributeName: UIFont(name: "ProximaNova-Regular", size: 16)!])
             str.appendAttributedString(sizeAttr)
         }
         

@@ -17,8 +17,6 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let itensCells = ["photoCollectionCell", "priceCell", "descriptionCell", "itemDescriptionCell", "bagItensCell", "separatorCell", "detailSellerCell", "relatedTitleCell", "relatedItensCell"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,7 +49,14 @@ class DetailViewController: UIViewController {
         if let shipping = currentProduct?.shippingType {
             cellItens?.append(("itemDescriptionCell", ["description": "frete", "detail": shipping]))
         }
-        cellItens?.append(("bagItensCell", currentProduct!))
+        
+        cellItens?.append(("bagItensCell", ""))
+        cellItens?.append(("separatorCell", ""))
+        cellItens?.append(("detailSellerCell", currentProduct!))
+        cellItens?.append(("relatedTitleCell", currentProduct!))
+        if let itens = currentProduct?.related {
+            cellItens?.append(("relatedItensCell", itens))
+        }
         
         tableView.reloadData()
     }
