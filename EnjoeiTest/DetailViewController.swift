@@ -10,16 +10,75 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var item: Int = 1
+    var cellItens: [(identifier: String, item: AnyObject)]?
+    var productListHandler: ProductListHandler = ProductListHandler()
+    var currentProduct: ProductDetail?
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    let itensCells = ["photoCollectionCell", "priceCell", "descriptionCell", "itemDescriptionCell", "bagItensCell", "separatorCell", "detailSellerCell", "relatedTitleCell", "relatedItensCell"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        ProductRequest.productDetail(item) { (product) in
+            self.currentProduct = product
+            dispatch_async(dispatch_get_main_queue(), {self.populatetable()})
+        }
+        
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableViewAutomaticDimension
+    }
+    
+    func populatetable() {
+        cellItens = [(identifier: String, item: AnyObject)]()
+        if let cellPhoto = currentProduct?.photo {
+            cellItens?.append(("photoCollectionCell", cellPhoto))
+        }
+        
+        cellItens?.append(("priceCell", currentProduct!))
+        
+        if let description = currentProduct?.content {
+            cellItens?.append(("descriptionCell", description))
+        }
+        if let size = currentProduct?.size {
+            cellItens?.append(("itemDescriptionCell", ["description": "tamanho", "detail": String(size)]))
+        }
+        if let brand = currentProduct?.brand {
+            cellItens?.append(("itemDescriptionCell", ["description": "marca", "detail": brand]))
+        }
+        if let shipping = currentProduct?.shippingType {
+            cellItens?.append(("itemDescriptionCell", ["description": "frete", "detail": shipping]))
+        }
+        cellItens?.append(("bagItensCell", currentProduct!))
+        
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 
 }
 
+extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cellItens?.count ?? 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let defaultText = cellItens![indexPath.item]
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(defaultText.identifier, forIndexPath: indexPath)
+        
+        if let baseCell = cell as? BaseCell {
+            baseCell.populateCell(defaultText.item)
+            return baseCell
+        }
+        
+        return cell
+    }
+
+}

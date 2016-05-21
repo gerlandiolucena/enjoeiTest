@@ -19,7 +19,7 @@ class ListViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         ProductRequest.productList { (product) in
-            //TODO:Inplementar feedback para o usuário de tela carregando
+            //TODO:Implementar feedback para o usuário de tela carregando
             
             //Somente depois de receber os dados do servidor que a iremos mandar a collection ser carregada
             self.productList = product ?? [Product]()
@@ -29,16 +29,6 @@ class ListViewController: UIViewController {
                 self.collectionView.reloadData()
             })
             
-        }
-        
-        let search = UISearchBar()
-        search.placeholder = "o que você esta procurando?"
-        navigationItem.titleView = search
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let detailView = segue.destinationViewController as? DetailViewController {
-            detailView.item = (sender as? Int ?? 0)+1
         }
     }
 
@@ -55,7 +45,7 @@ extension ListViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("showDetail", sender: indexPath.item)
+        //
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -85,6 +75,8 @@ extension ListViewController: UICollectionViewDataSource, UICollectionViewDelega
         return reusableview
         
     }
-
+    
+    
+    
 }
 

@@ -12,18 +12,29 @@ import UIKit
 class ProductCell: UICollectionViewCell {
     @IBOutlet weak var defaultImage: GLImageView!
     @IBOutlet weak var productNameLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var sizeLabel: UILabel!
     @IBOutlet weak var userButton: UIButton!
     @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var info: UILabel!
     
     func populateCell(product: Product) {
         productNameLabel.text = product.title
-        priceLabel.text = String(format:"R$ %.0f", product.price)
-        sizeLabel.text = product.size != nil ? "tam \(product.size)" : ""
-        likeButton.titleLabel?.text = String(product.likes ?? 0)
+        setupInfoLabel(String(format:"R$ %.0f", product.price), size: 36)
+        likeButton.setTitle(" \(product.likes ?? 0)", forState: .Normal)
+        
         if let url = product.photo.first {
             defaultImage.setURL(url)
         }
+    }
+    
+    func setupInfoLabel(price: String, size: Int?) {
+        let priceAttr = NSMutableAttributedString(string:price, attributes: [NSForegroundColorAttributeName: UIColor(netHex: 0xF5595E)])
+        let str = NSMutableAttributedString(attributedString: priceAttr)
+        
+        if let value = size {
+            let sizeAttr = NSMutableAttributedString(string:" - tam \(value)", attributes: [NSForegroundColorAttributeName: UIColor.lightGrayColor()])
+            str.appendAttributedString(sizeAttr)
+        }
+        
+        info.attributedText = str
     }
 }

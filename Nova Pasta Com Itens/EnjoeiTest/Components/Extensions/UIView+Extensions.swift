@@ -1,7 +1,9 @@
 //
 //  UIView+Rounded.swift
+//  ZapPro
 //
 //  Created by Gerlandio da Silva Lucena on 5/22/15.
+//  Copyright (c) 2015 ZAP Imóveis. All rights reserved.
 //
 
 import UIKit

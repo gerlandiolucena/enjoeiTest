@@ -11,21 +11,21 @@ import Foundation
 
 class Product: NSObject {
     
-    var discountPercentage: Float = 0
-    var code: Int = 0
-    var originalPrice: Float = 0
-    var price: Float = 0
-    var title: String = ""
-    var content: String = ""
-    var likes: Int = 0
-    var photo = [String]()
-    var condition: String = ""
-    var size: Int?
-    var shippingType: String = ""
-    var brand: String = ""
-    var userTitle: String = ""
-    var userCity: String = ""
-    var userState: String = ""
+    private(set) var discountPercentage: Float = 0
+    private(set) var code: Int = 0
+    private(set) var originalPrice: Float = 0
+    private(set) var price: Float = 0
+    private(set) var title: String = ""
+    private(set) var content: String = ""
+    private(set) var likes: Int = 0
+    private(set) var photo = [String]()
+    private(set) var condition: String = ""
+    private(set) var size: Int?
+    private(set) var shippingType: String = ""
+    private(set) var brand: String = ""
+    private(set) var userTitle: String = ""
+    private(set) var userCity: String = ""
+    private(set) var userState: String = ""
     
     init(dict: [String: AnyObject]) {
         super.init()

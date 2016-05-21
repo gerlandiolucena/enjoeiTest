@@ -13,7 +13,7 @@ struct ProductRequest {
     static let defaultURL = "https://gist.githubusercontent.com/caironoleto/9cd18d9642a7d5e8eef0/raw/dbe726570f063e2be2b353fd35d48ff9f9180b52"
     
     static let productListURL = "\(defaultURL)/_products.json"
-    static let productDetailURL = "\(defaultURL)/product_0@@.json"
+    static let productDetailURL = "\(defaultURL)/product_@@.json"
     
     static func productList(completion: ((product: [Product]?) -> Void)) {
         
