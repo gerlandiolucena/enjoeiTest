@@ -15,7 +15,7 @@ class SellerTableCell: BaseCell {
     
     override func populateCell(item: AnyObject){
         if let product = item as? ProductDetail {
-            
+            sellerNameLabel.text = product
         }
     }
 }
