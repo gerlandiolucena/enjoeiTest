@@ -55,6 +55,7 @@ extension ListViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        tabBarController?.tabBar.hidden = true
         performSegueWithIdentifier("showDetail", sender: indexPath.item)
     }
     

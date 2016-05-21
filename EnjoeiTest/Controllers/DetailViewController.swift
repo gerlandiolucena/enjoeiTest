@@ -29,6 +29,11 @@ class DetailViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        tabBarController?.tabBar.hidden = false
+    }
+    
     func populatetable() {
         cellItens = [(identifier: String, item: AnyObject)]()
         if let cellPhoto = currentProduct?.photo {

@@ -24,8 +24,6 @@
             <string>ProximaNova-Regular</string>
             <string>ProximaNova-Regular</string>
             <string>ProximaNova-Regular</string>
-            <string>ProximaNova-Regular</string>
-            <string>ProximaNova-Regular</string>
         </mutableArray>
         <mutableArray key="ProximaNova-Semibold.otf">
             <string>ProximaNova-SemiBold</string>
@@ -246,11 +244,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Uu-mB-tbe">
                                 <rect key="frame" x="0.0" y="1683" width="600" height="68"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyZ-lc-9wy">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyZ-lc-9wy">
                                         <rect key="frame" x="305" y="13" width="285" height="42"/>
                                         <color key="backgroundColor" red="0.96862745100000003" green="0.44705882349999998" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
-                                        <state key="normal" title="eu quero">
+                                        <state key="normal" title="eu quero" image="carrinho">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -259,13 +256,12 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg3-wx-X3M">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg3-wx-X3M">
                                         <rect key="frame" x="10" y="13" width="285" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="uZz-pW-Nmw"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
-                                        <state key="normal" title="fazer oferta">
+                                        <state key="normal" title="fazer oferta" image="martelo">
                                             <color key="titleColor" red="0.96862745100000003" green="0.44705882349999998" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -416,14 +412,15 @@
                                                                 </mask>
                                                             </variation>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8B-1T-qLC">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8B-1T-qLC">
                                                             <rect key="frame" x="524" y="20" width="56" height="56"/>
                                                             <color key="backgroundColor" red="0.43529411759999997" green="0.81176470590000005" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="56" id="0Ww-ZV-Orn"/>
                                                                 <constraint firstAttribute="height" constant="56" id="EWb-p1-Wh5"/>
                                                             </constraints>
-                                                            <state key="normal" title="Button">
+                                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <state key="normal" image="icon1-1">
                                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
                                                             <userDefinedRuntimeAttributes>
@@ -432,14 +429,14 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhE-sR-KiZ">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhE-sR-KiZ">
                                                             <rect key="frame" x="448" y="20" width="56" height="56"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="56" id="PZo-ZW-kkm"/>
                                                                 <constraint firstAttribute="height" constant="56" id="t0o-a1-2SC"/>
                                                             </constraints>
-                                                            <state key="normal" title="Button">
+                                                            <state key="normal" image="smille">
                                                                 <color key="titleColor" red="0.96862745100000003" green="0.44705882349999998" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
                                                             <userDefinedRuntimeAttributes>
@@ -603,7 +600,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="245"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y9E-q8-IOV">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sacola" translatesAutoresizingMaskIntoConstraints="NO" id="y9E-q8-IOV">
                                                     <rect key="frame" x="275" y="28" width="50" height="48"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="8qC-Qy-Feg"/>
@@ -699,14 +696,14 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3V-Az-iYf">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3V-Az-iYf">
                                                     <rect key="frame" x="511" y="20" width="56" height="56"/>
                                                     <color key="backgroundColor" red="0.43529411764705883" green="0.81176470588235294" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="56" id="aPw-SK-BRk"/>
                                                         <constraint firstAttribute="width" constant="56" id="iWA-70-tt8"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button">
+                                                    <state key="normal" image="usuario">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -873,7 +870,7 @@
                                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="15"/>
                                                                         <color key="tintColor" red="0.79215686269999996" green="0.7725490196" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <state key="normal" title="35" image="first">
+                                                                        <state key="normal" title="35" image="icon1">
                                                                             <color key="titleColor" red="0.79215686269999996" green="0.7725490196" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
@@ -889,7 +886,6 @@
                                                                         <rect key="frame" x="0.0" y="263" width="86" height="54"/>
                                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                        <state key="normal" image="first"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                                                 <color key="value" red="0.91764705879999997" green="0.90588235289999997" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
@@ -1061,7 +1057,13 @@
     </scenes>
     <resources>
         <image name="back" width="22" height="14"/>
+        <image name="carrinho" width="24" height="23"/>
         <image name="first" width="30" height="30"/>
         <image name="icon1" width="24" height="24"/>
+        <image name="icon1-1" width="24" height="24"/>
+        <image name="martelo" width="24" height="25"/>
+        <image name="sacola" width="48" height="48"/>
+        <image name="smille" width="24" height="24"/>
+        <image name="usuario" width="26" height="24"/>
     </resources>
 </document>
